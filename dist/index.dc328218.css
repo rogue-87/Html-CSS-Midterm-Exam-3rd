@@ -348,4 +348,74 @@ header .header-links li :hover {
   margin-top: 0;
 }
 
+.portfolio .info {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.portfolio .info span {
+  color: #f4f4f4;
+  text-transform: uppercase;
+  z-index: -1;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .info .title {
+  color: #4eb478;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.portfolio .info .desc {
+  color: #444;
+}
+
+.portfolio .controls {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.portfolio .controls button {
+  color: #000;
+  text-transform: uppercase;
+  background-color: #eaeaea;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  padding: .8rem 2rem;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+
+.portfolio .controls button:hover {
+  color: #4eb478;
+}
+
+.portfolio .row {
+  flex-wrap: wrap;
+  margin: auto;
+  display: flex;
+}
+
+.portfolio .row .wrap {
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+
+.portfolio .row .wrap .portfolio-info, .portfolio .row .wrap .portfolio-links {
+  position: absolute;
+}
+
+.portfolio .row-item {
+  width: 33.3333%;
+  padding: 12px;
+}
+
 /*# sourceMappingURL=index.dc328218.css.map */
