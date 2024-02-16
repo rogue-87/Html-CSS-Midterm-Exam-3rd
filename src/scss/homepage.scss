@@ -19,8 +19,6 @@
   border-radius: calc($btn-height/2);
 }
 
-// wraps the whole website
-
 
 /*  Header  */
 
@@ -136,52 +134,79 @@ header {
   }
 }
 
-
 /*  About Section  */
 
-.about .container{
+.about .container {
   display: flex;
-  .img-fluid{
+  .img-fluid {
     width: 40%;
-    background-image: url('../img/about.jpg');
+    background-image: url("../img/about.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .about-info{
+  .about-info {
     width: 60%;
     padding-left: 35px;
 
-    .title{
+    .title {
       font-size: 2.2rem;
       color: #444444;
       margin-bottom: 0;
     }
 
-    .desc{
+    .desc {
       color: #848484;
     }
-
   }
 
-  .row{
+  .row {
     display: flex;
     flex-wrap: wrap;
 
-    .row-item{
+    .row-item {
+      padding: 0 10px;
       width: 50%;
-      h3{
-  
+      h3 {
         color: #444444;
       }
-  
-      p{
-        color: #848484;
-      }
-  
-    }
 
+      p {
+        color: #848484;
+        width: 30ch;
+      }
+    }
+  }
+}
+
+/*  Clients Section  */
+
+.clients{
+  padding: 0 15px;
+  background-color: #f4f4f4;
+  text-align: center;
+  .row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+  }
+
+  .row-item{
+    @include Transition();
+    width: calc(100% / 6);
+    margin: auto;
+    filter: grayscale(1);
+
+    &:hover{
+      filter: grayscale(0);
+      transform: scale(1.2);
+    }
+  }
+
+  img{
+    width: 50%;
+    padding: 15px 0;
   }
 
 }

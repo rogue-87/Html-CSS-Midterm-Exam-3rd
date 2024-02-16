@@ -10,6 +10,10 @@ header a {
   color: #fff;
 }
 
+section {
+  padding: 50px 0;
+}
+
 section a {
   color: #000;
 }
@@ -25,7 +29,12 @@ body {
 }
 
 .container {
-  padding: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img-fluid {
+  max-width: 100%;
 }
 
 header {
@@ -169,6 +178,7 @@ header .header-links li :hover {
 
 .about .container .row .row-item {
   width: 50%;
+  padding: 0 10px;
 }
 
 .about .container .row .row-item h3 {
@@ -177,6 +187,36 @@ header .header-links li :hover {
 
 .about .container .row .row-item p {
   color: #848484;
+  width: 30ch;
+}
+
+.clients {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 0 15px;
+}
+
+.clients .row {
+  flex-wrap: nowrap;
+  justify-content: end;
+  display: flex;
+}
+
+.clients .row-item {
+  filter: grayscale();
+  width: 16.6667%;
+  margin: auto;
+  transition: all .3s ease-in-out;
+}
+
+.clients .row-item:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+.clients img {
+  width: 50%;
+  padding: 15px 0;
 }
 
 /*# sourceMappingURL=index.dc328218.css.map */
