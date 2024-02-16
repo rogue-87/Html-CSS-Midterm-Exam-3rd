@@ -427,3 +427,40 @@ header {
     }
   }
 }
+
+/*  Testimonials Section  */
+.testimonials{
+  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url('../img/testimonials-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  
+  .testimonial-item{
+    margin: auto;
+    text-align: center;
+    color: $accent-color;
+    
+    .testimonial-img{
+      margin: 0 auto;
+      object-fit: cover;
+      width: 100px;
+      border-radius: (100px / 2);
+      border: solid 7px #ffffff3d;
+    }
+
+    .role{
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .desc{
+      margin: 0 auto; // Fallback
+      font-style: italic;
+      font-weight: 400;
+      width: 110ch;
+
+    }
+  }
+}
