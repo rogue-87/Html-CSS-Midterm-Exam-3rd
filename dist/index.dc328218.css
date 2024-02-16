@@ -4,7 +4,6 @@
   font-family: Raleway, Arial, Helvetica, sans-serif;
   text-decoration: none;
   list-style-type: none;
-  transition: all .3s ease-in-out;
 }
 
 header a {
@@ -19,11 +18,18 @@ body {
   margin: 0;
 }
 
-body > .wrapper {
-  width: 90%;
+.wrapper {
+  width: 93%;
+  margin: auto;
+  box-shadow: 2px 2px 16px #00000056;
+}
+
+.container {
+  padding: 50px;
 }
 
 header {
+  z-index: 100;
   color: #fff;
   background-color: #000;
   align-items: center;
@@ -31,11 +37,13 @@ header {
   height: 60px;
   display: flex;
   position: fixed;
+  inset: 0;
 }
 
 header ul {
   margin: 0;
   padding: 0;
+  transition: all .3s ease-in-out;
 }
 
 header .header-cont {
@@ -55,7 +63,7 @@ header .header-title {
 
 header .header-links {
   gap: 2em;
-  font-size: .85rem;
+  font-size: .95rem;
   font-weight: 500;
   display: flex;
 }
@@ -66,6 +74,109 @@ header .header-links li {
 
 header .header-links li :hover {
   color: #72c393;
+}
+
+.hero {
+  background-image: url("hero-bg.002a2575.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 85dvh;
+  position: relative;
+}
+
+.hero:before {
+  content: "";
+  background-color: #000000a3;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-cont {
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-cont .hero-title, .hero-cont .hero-desc {
+  width: 50%;
+}
+
+.hero-cont .hero-title {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hero-cont .hero-desc {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.hero-cont .hero-btn {
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: #0000;
+  border: 2px solid #4eb478;
+  border-radius: .4rem;
+  padding: .8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+}
+
+.hero-cont .hero-btn:hover {
+  background-color: #4eb478;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .container .img-fluid {
+  background-image: url("about.b718f128.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+}
+
+.about .container .about-info {
+  width: 60%;
+  padding-left: 35px;
+}
+
+.about .container .about-info .title {
+  color: #444;
+  margin-bottom: 0;
+  font-size: 2.2rem;
+}
+
+.about .container .about-info .desc {
+  color: #848484;
+}
+
+.about .container .row {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.about .container .row .row-item {
+  width: 50%;
+}
+
+.about .container .row .row-item h3 {
+  color: #444;
+}
+
+.about .container .row .row-item p {
+  color: #848484;
 }
 
 /*# sourceMappingURL=index.dc328218.css.map */

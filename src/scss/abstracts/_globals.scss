@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
 
 $primary-color: #000;
 $primary-bgcolor: #fff;
@@ -6,24 +6,32 @@ $primary-bgcolor: #fff;
 $accent-color: #fff;
 $accent-bgcolor: #000;
 
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   list-style-type: none;
   text-decoration: none;
-
-  transition: all 0.3s ease-in-out;
 }
 
-header a{
+header a {
   color: $accent-color;
 }
 
-section a{
-  color:$primary-color;
+section a {
+  color: $primary-color;
 }
 
-body{
+body {
   margin: 0;
 }
 
+.wrapper {
+  width: 93%;
+  margin: auto;
+  box-shadow: 2px 2px 16px #00000056;
+}
+
+// containerizes selected sections
+.container{
+  padding: 50px;
+}

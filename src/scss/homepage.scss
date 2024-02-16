@@ -1,22 +1,44 @@
 @use "abstracts/globals" as *;
 
-body > .wrapper {
-  width: 90%;
-  // text-align: center;
+@mixin Transition($property: all, $duration: 0.3s) {
+  transition: $property $duration ease-in-out;
 }
+
+@mixin Button(
+  $color: #fff,
+  $bgcolor: #0000,
+  $btn-height: 0.8rem,
+  $btn-width: 2rem,
+  $border: 2px #fff solid
+) {
+  color: $color;
+  background-color: $bgcolor;
+  padding: $btn-height $btn-width;
+
+  border: $border;
+  border-radius: calc($btn-height/2);
+}
+
+// wraps the whole website
+
 
 /*  Header  */
 
 header {
   width: 100dvw;
   position: fixed;
+  inset: 0 0;
+  z-index: 100;
+
   color: $accent-color;
   background-color: $accent-bgcolor;
+
   height: 60px;
   display: flex;
   align-items: center;
 
   ul {
+    @include Transition();
     padding: 0;
     margin: 0;
   }
@@ -39,11 +61,11 @@ header {
 
   .header-links {
     display: flex;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     gap: 2em;
     font-weight: 500;
 
-    li{
+    li {
       cursor: pointer;
 
       *:hover {
@@ -51,4 +73,115 @@ header {
       }
     }
   }
+}
+
+/*  Hero Section  */
+
+.hero {
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 85dvh;
+  position: relative;
+
+  &::before {
+    background-color: #000000a3;
+    position: absolute;
+    inset: 0 0;
+    content: "";
+  }
+}
+// hero container
+.hero-cont {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  inset: 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  color: $accent-color;
+
+  .hero-title,
+  .hero-desc {
+    width: 50%;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .hero-desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .hero-btn {
+    @include Button($border: solid 2px #4eb478);
+    @include Transition;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    &:hover {
+      background-color: #4eb478;
+    }
+  }
+}
+
+
+/*  About Section  */
+
+.about .container{
+  display: flex;
+  .img-fluid{
+    width: 40%;
+    background-image: url('../img/about.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-info{
+    width: 60%;
+    padding-left: 35px;
+
+    .title{
+      font-size: 2.2rem;
+      color: #444444;
+      margin-bottom: 0;
+    }
+
+    .desc{
+      color: #848484;
+    }
+
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+
+    .row-item{
+      width: 50%;
+      h3{
+  
+        color: #444444;
+      }
+  
+      p{
+        color: #848484;
+      }
+  
+    }
+
+  }
+
 }
