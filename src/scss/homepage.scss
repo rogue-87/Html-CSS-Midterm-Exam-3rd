@@ -1,0 +1,54 @@
+@use "abstracts/globals" as *;
+
+body > .wrapper {
+  width: 90%;
+  // text-align: center;
+}
+
+/*  Header  */
+
+header {
+  width: 100dvw;
+  position: fixed;
+  color: $accent-color;
+  background-color: $accent-bgcolor;
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  //header-container
+  .header-cont {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  .header-links {
+    display: flex;
+    font-size: 0.85rem;
+    gap: 2em;
+    font-weight: 500;
+
+    li{
+      cursor: pointer;
+
+      *:hover {
+        color: #72c393;
+      }
+    }
+  }
+}

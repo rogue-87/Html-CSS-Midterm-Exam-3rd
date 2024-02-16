@@ -1,0 +1,71 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap";
+* {
+  box-sizing: border-box;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all .3s ease-in-out;
+}
+
+header a {
+  color: #fff;
+}
+
+section a {
+  color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+body > .wrapper {
+  width: 90%;
+}
+
+header {
+  color: #fff;
+  background-color: #000;
+  align-items: center;
+  width: 100dvw;
+  height: 60px;
+  display: flex;
+  position: fixed;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header .header-cont {
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+header .header-title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .header-links {
+  gap: 2em;
+  font-size: .85rem;
+  font-weight: 500;
+  display: flex;
+}
+
+header .header-links li {
+  cursor: pointer;
+}
+
+header .header-links li :hover {
+  color: #72c393;
+}
+
+/*# sourceMappingURL=index.dc328218.css.map */

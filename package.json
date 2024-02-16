@@ -1,0 +1,25 @@
+{
+  "name": "Midterm-Exam-II",
+  "version": "1.0.0",
+  "source": "./src/index.html",
+  "targets": {
+    "defaults": {
+      "publicUrl": "./"
+    }
+  },
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/parcel serve src/index.html",
+    "watch": "./node_modules/.bin/parcel watch",
+    "build": "./node_modules/.bin/parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "parcel": "^2.11.0",
+    "sass": "^1.71.0"
+  }
+}
