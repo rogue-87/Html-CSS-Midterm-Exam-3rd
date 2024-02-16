@@ -210,3 +210,52 @@ header {
   }
 
 }
+
+/*  Features Section  */
+
+.features .container > .row{
+  display: flex;
+  gap: 25px;
+
+  .row-item{
+    @include Transition();
+    background-color: #f7f7f7;
+    width: (100% / 3);
+    border-radius: 5px;
+
+    .item-img{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      
+      img{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+
+    .item-info{
+      padding: 1rem;
+    }
+    .title,.desc{
+      margin: 0;
+    }
+    .title{
+      @include Transition();
+      color: #444444;
+      margin-bottom: 8px;
+    }
+    .desc{
+      font-weight: 500;
+      color: #848484;
+    }
+
+    &:hover{
+      background-color: #fff;
+      box-shadow: 2px 2px 8px #0000001c;
+
+      .title{
+        color: #4eb478;
+      }
+    }
+  }
+}

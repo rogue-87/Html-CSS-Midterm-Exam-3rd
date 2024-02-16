@@ -219,4 +219,49 @@ header .header-links li :hover {
   padding: 15px 0;
 }
 
+.features .container > .row {
+  gap: 25px;
+  display: flex;
+}
+
+.features .container > .row .row-item {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  width: 33.3333%;
+  transition: all .3s ease-in-out;
+}
+
+.features .container > .row .row-item .item-img, .features .container > .row .row-item .item-img img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.features .container > .row .row-item .item-info {
+  padding: 1rem;
+}
+
+.features .container > .row .row-item .title, .features .container > .row .row-item .desc {
+  margin: 0;
+}
+
+.features .container > .row .row-item .title {
+  color: #444;
+  margin-bottom: 8px;
+  transition: all .3s ease-in-out;
+}
+
+.features .container > .row .row-item .desc {
+  color: #848484;
+  font-weight: 500;
+}
+
+.features .container > .row .row-item:hover {
+  background-color: #fff;
+  box-shadow: 2px 2px 8px #0000001c;
+}
+
+.features .container > .row .row-item:hover .title {
+  color: #4eb478;
+}
+
 /*# sourceMappingURL=index.dc328218.css.map */
