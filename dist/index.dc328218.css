@@ -37,6 +37,11 @@ body {
   max-width: 100%;
 }
 
+.strike {
+  color: #777;
+  text-decoration: line-through;
+}
+
 header {
   z-index: 100;
   color: #fff;
@@ -813,6 +818,86 @@ header .header-links li :hover {
 
 .contact .contact-form .row:first-child .row-item {
   width: 50%;
+}
+
+.footer-newsletter {
+  color: #fff;
+  text-align: center;
+  background-color: #111;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  display: flex;
+}
+
+.footer-newsletter .container {
+  width: 50%;
+}
+
+.footer-newsletter h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.footer-newsletter p {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.footer-newsletter form {
+  text-align: left;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 6px 10px;
+  position: relative;
+  box-shadow: 0 2px 15px #0000001a;
+}
+
+.footer-newsletter input {
+  border: 0;
+  width: calc(100% - 100px);
+  padding: 4px 8px;
+}
+
+.footer-newsletter button {
+  color: #fff;
+  background: #4eb478;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  padding: 0 20px 3px;
+  font-size: 16px;
+  transition: all .3s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -2px;
+  box-shadow: 0 2px 15px #0000001a;
+}
+
+.footer-content {
+  color: #fff;
+  background-color: #1b1b1b;
+  padding: 25px 0;
+}
+
+.footer-content a {
+  color: #aaa;
+}
+
+.footer-content ul {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.footer-content .container {
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer-content .container .col {
+  width: 25%;
 }
 
 /*# sourceMappingURL=index.dc328218.css.map */
