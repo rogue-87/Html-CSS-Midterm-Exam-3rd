@@ -328,6 +328,7 @@ header .header-links li :hover {
 }
 
 .services .info > .title {
+  text-transform: uppercase;
   color: #4eb478;
   margin-top: 0;
   font-size: 2rem;
@@ -369,6 +370,7 @@ header .header-links li :hover {
 
 .portfolio .info .title {
   color: #4eb478;
+  text-transform: uppercase;
   margin-top: 0;
   font-size: 2rem;
 }
@@ -476,6 +478,7 @@ header .header-links li :hover {
 }
 
 .team .info .title {
+  text-transform: uppercase;
   color: #4eb478;
   margin-top: 0;
   font-size: 2rem;
@@ -534,6 +537,7 @@ header .header-links li :hover {
 
 .pricing .info {
   text-align: center;
+  margin-bottom: 25px;
   padding: 30px 0;
   position: relative;
 }
@@ -552,6 +556,7 @@ header .header-links li :hover {
 }
 
 .pricing .info .title {
+  text-transform: uppercase;
   color: #4eb478;
   margin-top: 0;
   font-size: 2rem;
@@ -604,11 +609,18 @@ header .header-links li :hover {
 
 .pricing .row-item button {
   color: #000;
+  cursor: pointer;
   background-color: #fff;
   border: 2px solid #ddd;
   border-radius: .4rem;
   padding: .8rem 2rem;
   font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+
+.pricing .row-item button:hover {
+  color: #4eb478;
+  border-color: #4eb478;
 }
 
 .pricing .row .special {
@@ -625,6 +637,80 @@ header .header-links li :hover {
 .pricing .row .special button {
   color: #fff;
   border-color: #fff;
+}
+
+.pricing .row .special button:hover {
+  color: #4eb478;
+  background-color: #fff;
+}
+
+.faq {
+  background-color: #f3faf6;
+}
+
+.faq .info {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.faq .info span {
+  color: #f1f1f1;
+  text-transform: uppercase;
+  z-index: 1;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.faq .info .title {
+  z-index: 2;
+  text-transform: uppercase;
+  color: #4eb478;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.faq .info .desc {
+  color: #444;
+}
+
+.faq ul {
+  width: 85%;
+  margin: auto;
+}
+
+.faq ul li {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 25px 0;
+  padding: 25px;
+  transition: all .3s ease-in-out;
+}
+
+.faq ul li h4 {
+  color: #343a40;
+  margin: 0;
+  font-weight: 600;
+}
+
+.faq ul li p {
+  margin: 0;
+  display: none;
+}
+
+.faq ul li:hover h4 {
+  color: #4eb478;
+  margin-bottom: 15px;
+}
+
+.faq ul li:hover p {
+  display: initial;
 }
 
 /*# sourceMappingURL=index.dc328218.css.map */

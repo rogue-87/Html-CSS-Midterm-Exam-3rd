@@ -346,6 +346,7 @@ header {
 
     >.title{
       font-size: 2rem;
+      text-transform: uppercase;
       color: #4eb478;
 
       margin-top: 0;
@@ -378,7 +379,7 @@ header {
     .title{
       font-size: 2rem;
       color: #4eb478;
-
+      text-transform: uppercase;
       margin-top: 0;
     }
 
@@ -472,6 +473,7 @@ header {
 
     .title{
       font-size: 2rem;
+      text-transform: uppercase;
       color: #4eb478;
 
       margin-top: 0;
@@ -533,10 +535,12 @@ header {
 
 .pricing{
   .info{
+    margin-bottom: 25px;
     @include Text-Shadow();
 
     .title{
       font-size: 2rem;
+      text-transform: uppercase;
       color: #4eb478;
 
       margin-top: 0;
@@ -590,8 +594,15 @@ header {
       }
   
       button{
+        @include Transition();
         @include Button(#000, #fff, 0.8rem, 2rem, 2px #dddddd solid);
         font-weight: 500;
+        cursor: pointer;
+
+        &:hover{
+          color: #4eb478;
+          border-color: #4eb478;
+        }
       }
     }
 
@@ -607,7 +618,89 @@ header {
       button{
         color: #fff;
         border-color: #fff;
+
+        &:hover{
+          color: #4eb478;
+          background-color: #fff;
+        }
       }
     }
   }
 }
+
+/*  Faq Section  */
+
+.faq{
+  background-color: #f3faf6;
+
+  .info{
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+  
+    span{
+      font-size: 3rem;
+      font-weight: bold;
+      color: #f1f1f1;
+      text-transform: uppercase;
+      
+      position: absolute;
+      top: 30px;
+      left: 0;
+      right:0;
+      line-height: 0;
+      z-index: 1;
+    }
+
+    .title{
+      z-index: 2;
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: #4eb478;
+
+      margin-top: 0;
+    }
+
+    .desc{
+      color: #444444;
+    }
+  }
+
+
+  ul{
+    width: 85%;
+    margin: auto;
+    
+    li{
+      @include Transition();
+      background-color: #fff;
+      cursor: pointer;
+      padding: 25px;
+      margin: 25px 0;
+      border-radius: 5px;
+
+      h4{
+        color: #343a40;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      p{
+        display: none;
+        margin: 0;
+      }
+    }
+    
+    li:hover{
+      h4{
+        color: #4eb478;
+        margin-bottom: 15px;
+      }
+
+      p{
+        display: initial;
+      }
+    }
+  }
+}
+
