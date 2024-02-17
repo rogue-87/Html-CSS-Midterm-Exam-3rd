@@ -426,7 +426,7 @@ header {
       width: (100% / 3);
     }
   }
-}
+}   // not done yet
 
 /*  Testimonials Section  */
 .testimonials{
@@ -461,6 +461,69 @@ header {
       font-weight: 400;
       width: 110ch;
 
+    }
+  }
+}   // not done yet
+
+/*  Team Section  */
+.team{
+  .info{
+    @include Text-Shadow();
+
+    .title{
+      font-size: 2rem;
+      color: #4eb478;
+
+      margin-top: 0;
+    }
+
+    .desc{
+      color: #444444;
+    }
+  }
+
+  .cards{
+    display: flex;
+    gap: 25px;
+    border-radius: 7px;
+    img,.card-info{
+      border-radius: 7px;
+    }
+    .wrap{
+      height: auto;
+      position: relative;
+      
+      .card-info{
+        @include Transition();
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+        text-align: center;
+        position: absolute;
+        inset: 0 0 0 0;
+        .name{
+          margin: 0;
+          font-size: 1.2rem;
+        }
+        .role{
+          font-style: italic;
+          font-size: 0.8rem;
+        }
+
+        .card-info-content{
+          color: $accent-color;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 10px;
+        }
+
+        &:hover{
+          opacity: 1;
+          transition: 0.4s;
+        }
+
+      }
+      
     }
   }
 }

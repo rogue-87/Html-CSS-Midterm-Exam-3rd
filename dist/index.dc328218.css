@@ -456,4 +456,80 @@ header .header-links li :hover {
   font-weight: 400;
 }
 
+.team .info {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.team .info span {
+  color: #f4f4f4;
+  text-transform: uppercase;
+  z-index: -1;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.team .info .title {
+  color: #4eb478;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.team .info .desc {
+  color: #444;
+}
+
+.team .cards {
+  border-radius: 7px;
+  gap: 25px;
+  display: flex;
+}
+
+.team .cards img, .team .cards .card-info {
+  border-radius: 7px;
+}
+
+.team .cards .wrap {
+  height: auto;
+  position: relative;
+}
+
+.team .cards .wrap .card-info {
+  opacity: 0;
+  text-align: center;
+  background: linear-gradient(0deg, #000000e6 0%, #000c 20%, #00d4ff00 100%);
+  transition: all .3s ease-in-out;
+  position: absolute;
+  inset: 0;
+}
+
+.team .cards .wrap .card-info .name {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.team .cards .wrap .card-info .role {
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.team .cards .wrap .card-info .card-info-content {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.team .cards .wrap .card-info:hover {
+  opacity: 1;
+  transition: all .4s;
+}
+
 /*# sourceMappingURL=index.dc328218.css.map */
