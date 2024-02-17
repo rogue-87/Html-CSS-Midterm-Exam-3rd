@@ -532,4 +532,99 @@ header .header-links li :hover {
   transition: all .4s;
 }
 
+.pricing .info {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.pricing .info span {
+  color: #f4f4f4;
+  text-transform: uppercase;
+  z-index: -1;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.pricing .info .title {
+  color: #4eb478;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.pricing .info .desc {
+  color: #444;
+}
+
+.pricing .row {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.pricing .row-item {
+  text-align: center;
+  width: 33.3333%;
+  padding: 50px;
+  box-shadow: 2px 2px 12px #8888886b;
+}
+
+.pricing .row-item h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.pricing .row-item h4 {
+  color: #4eb478;
+  margin: 0 0 25px;
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.pricing .row-item h4 span {
+  color: #bababa;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.pricing .row-item ul {
+  text-align: left;
+  margin: 0 0 25px;
+  padding: 0;
+}
+
+.pricing .row-item ul li {
+  padding: 10px 0;
+}
+
+.pricing .row-item button {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: .4rem;
+  padding: .8rem 2rem;
+  font-weight: 500;
+}
+
+.pricing .row .special {
+  flex-grow: 15px;
+  background-color: #4eb478;
+  transform: scale(1.1);
+}
+
+.pricing .row .special * {
+  color: #fff;
+  background-color: #4eb478;
+}
+
+.pricing .row .special button {
+  color: #fff;
+  border-color: #fff;
+}
+
 /*# sourceMappingURL=index.dc328218.css.map */
