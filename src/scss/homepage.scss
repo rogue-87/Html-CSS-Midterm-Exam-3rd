@@ -753,17 +753,29 @@ header {
     text-align: center;
 
     input,textarea{
+      @include Transition();
       padding: 10px;
       border: solid 1px #dee2e6 ;
+      outline: none;
+
+      &:focus{
+        border-color: #4eb478;
+      }
     }
     textarea{
       resize: vertical;
     }
 
     button{
+      @include Transition();
       @include Button(#fff, #4eb478, 0.8rem, 2rem, none);
+      cursor: pointer;
       font-weight: 500;
       font-size: 1.2rem;
+
+      &:hover{
+        background-color: #3f9663;
+      }
     }
 
     .row:first-child{
@@ -775,3 +787,4 @@ header {
     }
   }
 }
+
