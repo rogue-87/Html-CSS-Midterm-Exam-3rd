@@ -653,6 +653,7 @@ header {
     }
 
     .title{
+      position: relative;
       z-index: 2;
       text-transform: uppercase;
       font-size: 2rem;
@@ -704,3 +705,73 @@ header {
   }
 }
 
+/*  Contact Section  */
+
+.contact{
+  .info{
+    margin-bottom: 25px;
+    @include Text-Shadow();
+
+    .title{
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #4eb478;
+
+      margin-top: 0;
+    }
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    margin: 25px 0;
+    &-item{
+      padding: 25px;
+      width: (100% / 3);
+      height: fit-content;
+      box-shadow: 0 0 30px #d6d7d8;
+      
+      h3{
+        color: #777777;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      p{
+        margin: 0;
+      }
+    }
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px #d6d7d8;
+    padding: 25px;
+    gap: 12px;
+    text-align: center;
+
+    input,textarea{
+      padding: 10px;
+      border: solid 1px #dee2e6 ;
+    }
+    textarea{
+      resize: vertical;
+    }
+
+    button{
+      @include Button(#fff, #4eb478, 0.8rem, 2rem, none);
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    .row:first-child{
+      display: flex;
+      gap: 25px;
+      .row-item{
+        width: 50%;  
+      }
+    }
+  }
+}

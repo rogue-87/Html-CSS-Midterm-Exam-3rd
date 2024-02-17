@@ -673,6 +673,7 @@ header .header-links li :hover {
   color: #4eb478;
   margin-top: 0;
   font-size: 2rem;
+  position: relative;
 }
 
 .faq .info .desc {
@@ -711,6 +712,95 @@ header .header-links li :hover {
 
 .faq ul li:hover p {
   display: initial;
+}
+
+.contact .info {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 30px 0;
+  position: relative;
+}
+
+.contact .info span {
+  color: #f4f4f4;
+  text-transform: uppercase;
+  z-index: -1;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.contact .info .title {
+  text-transform: uppercase;
+  color: #4eb478;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.contact .contact-row {
+  justify-content: space-around;
+  gap: 25px;
+  margin: 25px 0;
+  display: flex;
+}
+
+.contact .contact-row-item {
+  width: 33.3333%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 25px;
+  box-shadow: 0 0 30px #d6d7d8;
+}
+
+.contact .contact-row-item h3 {
+  color: #777;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.contact .contact-row-item p {
+  margin: 0;
+}
+
+.contact .contact-form {
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  display: flex;
+  box-shadow: 0 0 30px #d6d7d8;
+}
+
+.contact .contact-form input, .contact .contact-form textarea {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+}
+
+.contact .contact-form textarea {
+  resize: vertical;
+}
+
+.contact .contact-form button {
+  color: #fff;
+  background-color: #4eb478;
+  border: none;
+  border-radius: .4rem;
+  padding: .8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contact .contact-form .row:first-child {
+  gap: 25px;
+  display: flex;
+}
+
+.contact .contact-form .row:first-child .row-item {
+  width: 50%;
 }
 
 /*# sourceMappingURL=index.dc328218.css.map */
